@@ -83,7 +83,7 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
   
 
   # L07
-* The code below implements the following operations: BUILD_TREE,OS_SELECT,OS_DELETE with their additional helper
+* The code implements the following operations: BUILD_TREE,OS_SELECT,OS_DELETE with their additional helper
  functions.
 * BUILD_TREE: builds an augmented PBT(balanced+augmented Binary Search Tree) with the help of an additional function 
  called postorderAUG, the complexity of the algorithm being O(n) for both, so the total complexity is still O(n)
@@ -107,7 +107,7 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
   
 
   # L09
-* The algorithm below implements efficiently the base operations for disjoint sets and the Kruskal's Algorithm
+* The algorithm implements efficiently the base operations for disjoint sets and the Kruskal's Algorithm
  
 * The base operations for disjoint sets:
 * MAKE_SET(int key)->allocates a node, sets its characteristics and returns the newly created node.
@@ -120,8 +120,21 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
  it will be part of our MST. The itteration will stop when the MST will be copmplete.
 
   # L10
-  
-
+  * The code written by me is lead by the TODO sections of the requested functions:
+*   get_neighbors:->The idea of the algorithm is that we check each possible neighbor to see if it is valid(valid means it
+   is not a wall and it is on the grid).
+*   bfs:->The idea of the implementation is that we use a queue in order to keep track of our nodes and their status. The
+   nodes in the queue are GRAY(under visitation,they were white before being in the queue) and they will become BLACK after
+   we finish our traversal(we also set the distance from the source for each node).
+*   print_bfs_tree:->The idea of the implementation is identical with the one in L06, the only additional thing that we get
+	is a repr array, in order to print the position of the node on the grid.
+	performance:->As you can see in bfs() function we already count the number of operations, so performance just generates
+	test samples for bfs function in the two following manners: 1)constant nr. of node and variable nr. of edges
+																2)constant number of edges and variable number of nodes
+*   The obtained graphs are the expected ones, showing a linear effort(because it is a traversal).
+*   shortest_path:->The idea of the implementation is that we use the bfs algorithm in order to check if we can reach the
+    destination node, if we can we will reconstruct the path from de destination to the source and reverse the order in 
+	order to obtain the in betwwen nodes between source and destination and we will put them in the path array.
   # L11
 
   

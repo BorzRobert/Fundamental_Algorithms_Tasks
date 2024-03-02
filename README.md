@@ -146,6 +146,6 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
 *  TRAJAN:-the idea behind the algorithm is to find the strongly connected components in a directed graph using only one DFS
  traversal. The implementation is the one presented in the course.
 *  DFS Analysis:-The complexity of the algorithm is O(V+E), so the obtained graphs in the 2 required cases are linear as we
-* have already expected.
+ have already expected.
 
   

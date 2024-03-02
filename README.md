@@ -24,3 +24,21 @@
  The conclusions drawn above are true for the below implementation of the sorting algorithms.
 
   # L02
+The 3 required algorithms to implement are the following:
+
+* BuilHeapBottomUp->The idea behind this algorithm is that we know from the beginning all the elements in the array from which we want to construct a heap
+ (in place). So we choose the first place where it is possible to encounter values that are not where they belong(at the last non-leaf node) and we call Heapify 
+ for each node starting from there up to the root. Heapify works in the following manner: it tries to add a new element to two existing sub-heaps and make a
+ bigger one from the elements mentioned above.
+ 
+* BuildHeapTopDown->The idea behind this algorithm is that we don't know from the beggining all the elements that will be part of our final heap, so we have to
+ take them one by one and insert them in the newly created heap. The insertion works by putting the element as the last leaf, and by applying heapify2 on the
+ newly added element in order to buuble it up in the right place.
+ 
+* HeapSort->The idea behind the algorithm is that we start with a Max-Heap. After we have the Max-Heap created we do the following: take the root(which is also
+ the maximum value in the array) and swap it with the last leaf, then decrease the size of the array for wich we will restore it's heap property. In this
+ manner we sort in place, no additional space is required.
+ 
+ Charts interpretation: As we have already expected we can see that in the average case the method of building a Max(Min)
+ Heap by using the BottomUp approach is more efficienct than buildin a Max(Min) Heap by using the TopDown approach(The
+ combined graph(comp+atr) increases faster for the TopDown method than for the BottomUp method).

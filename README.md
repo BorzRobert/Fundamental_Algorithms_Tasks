@@ -1,4 +1,4 @@
-# Tasks:
+# Tasks Solved Description:
 # L01
  * The code presents 3 direct sorting methods(BubbleSort,SelectionSort,InsertionSort)
  BubbleSort- The function BubbleSort takes an array of maximum MAX_SIZE elements and its size and sorts it ascending

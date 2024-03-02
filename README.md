@@ -1,6 +1,6 @@
 # Tasks:
 # L01
-The code presents 3 direct sorting methods(BubbleSort,SelectionSort,InsertionSort)
+   The code presents 3 direct sorting methods(BubbleSort,SelectionSort,InsertionSort)
  BubbleSort- The function BubbleSort takes an array of maximum MAX_SIZE elements and its size and sorts it ascending
  according to the following principle: each set of adjacent pairs are checked,from left ti right, and if the order is
  not the desired one(ascending in our case) the two elements are swapped. We also check if the array is already sorted
@@ -13,7 +13,7 @@ The code presents 3 direct sorting methods(BubbleSort,SelectionSort,InsertionSor
  the second element, and place it in the correct order according to the sub-array already sorted. This process is 
  repeteated until the desired sorted array.
 
- Charts interpretation: The Average case->In the average case according to the Atr chart we can draw the following
+   Charts interpretation: The Average case->In the average case according to the Atr chart we can draw the following
  conclusion: SS<IS<BS (BS graph is increasing the fastest, then IS and the SS), the same conclusion can be drawn in
  the other two cases(Worst,Best). According to the Comp chart we can draw the following conclusion: BS<IS<SS.
  The Comp in the Best and Worst case can be visualised in the charts present in project folder.

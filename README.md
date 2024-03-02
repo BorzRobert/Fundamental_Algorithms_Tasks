@@ -120,13 +120,13 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
  it will be part of our MST. The itteration will stop when the MST will be copmplete.
 
   # L10
-  * The code written by me is lead by the TODO sections of the requested functions:
+* The code written by me is lead by the TODO sections of the requested functions:
 *   get_neighbors:->The idea of the algorithm is that we check each possible neighbor to see if it is valid(valid means it
    is not a wall and it is on the grid).
 *   bfs:->The idea of the implementation is that we use a queue in order to keep track of our nodes and their status. The
    nodes in the queue are GRAY(under visitation,they were white before being in the queue) and they will become BLACK after
    we finish our traversal(we also set the distance from the source for each node).
-*   print_bfs_tree:->The idea of the implementation is identical with the one in L06, the only additional thing that we get
+* print_bfs_tree:->The idea of the implementation is identical with the one in L06, the only additional thing that we get
 	is a repr array, in order to print the position of the node on the grid.
 	performance:->As you can see in bfs() function we already count the number of operations, so performance just generates
 	test samples for bfs function in the two following manners: 1)constant nr. of node and variable nr. of edges

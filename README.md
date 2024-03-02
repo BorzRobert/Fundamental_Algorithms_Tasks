@@ -67,6 +67,19 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
 * The comments are already present in the code.
 
   # L06
+* For R2 I have used an additional struct named Rep2 containing the node, the list of children of type Rep2, the
+ number of children and a boolean in order to mark the root when encountered. The method T1 does the transformations
+ in O(n) with the help of the additional struct. The additional memory needed is represented by the array children which
+ holds elements(references to the elements) of the type Rep2(without it it would have been really hard to respect the O(n)
+ restriction).
+*  The idea of the algorithm is the following: traverse one single time the parent vector and assign the values in the
+ new array of Rep2 type accordingly(of course an initialization is needed).
+ 
+*  For R3 I have used an additional struct named Rep3 containing the node and two pointers to the firstChild and to
+ the nextSibling of the node. The methos T2 does the transformations in O(n) with the help of the additional structure.
+*  The additional memory is represented by the memory that is occupied by the allocation of the nodes.
+* The idea of the algorithm is the following: we take the MWT created previously, starting from the root and we
+  create a new node of type Rep3 for each node of type Rep2 and we link appropriately the node's pointers.
   
 
   # L07

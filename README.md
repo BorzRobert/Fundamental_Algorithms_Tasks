@@ -64,7 +64,7 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
 * So larger the number of k random sorted lists, larger the number of operations.
 
   # L05
-  
+  * The comments are already present in the code.
 
   # L06
   

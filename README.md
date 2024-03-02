@@ -107,7 +107,17 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
   
 
   # L09
-  
+* The algorithm below implements efficiently the base operations for disjoint sets and the Kruskal's Algorithm
+ 
+* The base operations for disjoint sets:
+* MAKE_SET(int key)->allocates a node, sets its characteristics and returns the newly created node.
+* FIND_SET(TNode* x)->returns the representative of the set that x is included in.
+* UNION(TNode* x, TNode* y)->creates a bigger set containing all the elements from the 2 disjoint sets, it follows a
+ union by rank approach(we try to avoid unbalancing the tree more than is needed).  
+* KRUSKAL's Alg:
+* Follows a Greedy approach. We take as input a set of edges, we sort them(ascending) efficiently using HeapSort(from L03)
+* and then we itterate through the set of edges and we check if our edge doesn't close a cycle. If it doesn't close a cycle
+* it will be part of our MST. The itteration will stop when the MST will be copmplete.
 
   # L10
   

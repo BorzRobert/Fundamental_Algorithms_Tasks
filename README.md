@@ -39,6 +39,6 @@ The 3 required algorithms to implement are the following:
  the maximum value in the array) and swap it with the last leaf, then decrease the size of the array for wich we will restore it's heap property. In this
  manner we sort in place, no additional space is required.
  
- Charts interpretation: As we have already expected we can see that in the average case the method of building a Max(Min)
+ * Charts interpretation: As we have already expected we can see that in the average case the method of building a Max(Min)
  Heap by using the BottomUp approach is more efficienct than buildin a Max(Min) Heap by using the TopDown approach(The
  combined graph(comp+atr) increases faster for the TopDown method than for the BottomUp method).

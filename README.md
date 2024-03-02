@@ -136,5 +136,16 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
     destination node, if we can we will reconstruct the path from de destination to the source and reverse the order in 
 	order to obtain the in betwwen nodes between source and destination and we will put them in the path array.
   # L11
+  *  DFS:-the algorithm is implemented in a recursive manner, we use an enum in order to keep track of the node's color. A node
+  that is unvisited should be white, a node that is under visitation should be gray and a node that has already been visited
+  should be black. In order for the algorithm to be able to perform on graphs that are not connected we use an additional
+  function that ensures that every connected component will be analysed by DFS.
+*  TOPOLOGICAL_SORT:-the idea behind the algorithm is based on DFS, while testing the algorithm we make sure that our graph
+ is a DAG(otherwise a topological sort won't exist). After performing DFS on the graph we sort efficiently our nodes by
+ finish time and by doing this we obtain a topologocal order(which is not unique).
+*  TRAJAN:-the idea behind the algorithm is to find the strongly connected components in a directed graph using only one DFS
+ traversal. The implementation is the one presented in the course.
+*  DFS Analysis:-The complexity of the algorithm is O(V+E), so the obtained graphs in the 2 required cases are linear as we
+* have already expected.
 
   

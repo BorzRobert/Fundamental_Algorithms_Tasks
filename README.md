@@ -83,7 +83,14 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
   
 
   # L07
-  
+* The code below implements the following operations: BUILD_TREE,OS_SELECT,OS_DELETE with their additional helper
+ functions.
+* BUILD_TREE: builds an augmented PBT(balanced+augmented Binary Search Tree) with the help of an additional function 
+ called postorderAUG, the complexity of the algorithm being O(n) for both, so the total complexity is still O(n)
+* OS_SELECT: works on the following priciple->using the dimension of the nodes it searches through the tree deciding
+ if the node with the given rank is either on the left or on the right side of the current node
+* OS_DELETE: deletes the nodes like in a normal BST and toghether with the function fixBranch fixes the affected
+ branch depending on the type of node deleted(node with 2 childre/node with 1 child or no children)
 
   # L08
   

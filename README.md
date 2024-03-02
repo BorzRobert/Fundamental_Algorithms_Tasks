@@ -44,12 +44,12 @@ The 3 required algorithms to implement are the following:
  combined graph(comp+atr) increases faster for the TopDown method than for the BottomUp method).
 
   # L03
-*The QSort algorithm presented below works as follows: We start with the whole array to be sorted and we try to find the
+* The QSort algorithm presented below works as follows: We start with the whole array to be sorted and we try to find the
 pivot position(the final position of the pivot for this step) and the pivot value. In the following steps we will
-apply the same idea on the sub-arrays located on pivot's left and right side recursevly.
- *Comparing QSort with HeapSort by generating the graphs we can observe that HeapSort's graph increases faster than QS's
- graph, so it is less efficient.
- *I couldn't really compare QSort in the three cases(worst,best,average) because the computer couldn't handle such big
+apply the same idea on the sub-arrays located on pivot's left and right side recursevly.  
+ * Comparing QSort with HeapSort by generating the graphs we can observe that HeapSort's graph increases faster than QS's
+ graph, so it is less efficient.  
+ * I couldn't really compare QSort in the three cases(worst,best,average) because the computer couldn't handle such big
  input sizes for each case(but, analysing the obtained graphs we can cocnlude that there is a difference depending
  on the input format)
 

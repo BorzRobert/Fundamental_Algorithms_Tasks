@@ -93,6 +93,17 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
  branch depending on the type of node deleted(node with 2 childre/node with 1 child or no children)
 
   # L08
+  * PART I:
+* The first part implements the inorder traversal of an already built binary tree(built using BUILD_TREE function) in 2 different ways:
+ by using reccursion and by not using reccursion + using a stack(FIFO principle). The reccursive implementation has already been
+ discused. The itterative implementation uses a stack, starts from the root, visits its left subtree and prints(for the demo) the 
+ nodes in an inorder manner continuing with the right subtree.
+ 
+* PART II:
+* The second part implements QuickSortHybrid(the hybridisation is achieved using itterative InsertionSort from Lab01). The hybridisation
+ is based on a threshold(30 for the demo and variable in order to find the best value for an input of 10000 numbers). For a certain size
+ previously chosen(threshold) and less, we will use InsertionSort and from values greater or equal we will use QuickSort from Lab03. The
+ implementation with further explanations can be seen in QuickSorthybrid.
   
 
   # L09

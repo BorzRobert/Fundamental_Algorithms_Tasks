@@ -116,8 +116,8 @@ apply the same idea on the sub-arrays located on pivot's left and right side rec
  union by rank approach(we try to avoid unbalancing the tree more than is needed).  
 * KRUSKAL's Alg:
 * Follows a Greedy approach. We take as input a set of edges, we sort them(ascending) efficiently using HeapSort(from L03)
-* and then we itterate through the set of edges and we check if our edge doesn't close a cycle. If it doesn't close a cycle
-* it will be part of our MST. The itteration will stop when the MST will be copmplete.
+ and then we itterate through the set of edges and we check if our edge doesn't close a cycle. If it doesn't close a cycle
+ it will be part of our MST. The itteration will stop when the MST will be copmplete.
 
   # L10
   
